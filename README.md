@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-LSTM-orange)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+
 # reddit-sentiment-classifier
 An **NLP + LSTM based sentiment classifier** trained on Reddit comments to predict **positive, negative, or neutral sentiment**.
 
@@ -69,6 +73,15 @@ Data was collected using the **PRAW (Python Reddit API Wrapper)** library.
 
 ## 📈 Results & Insights
 
+### 📌 Model Performance
+| Metric    | Score |
+|-----------|-------|
+| Accuracy  | 64%   |
+| Precision | 0.65  |
+| Recall    | 0.61  |
+| F1-score  | 0.62  |
+
+
 * Model achieves **64% accuracy**.
 * **Positive comments** dominate in subreddits focused on brand **samsung**.
 * **Negative comments** are less likely predicted because of data imbalance.
@@ -76,6 +89,15 @@ Data was collected using the **PRAW (Python Reddit API Wrapper)** library.
 
 ![Confusion Matrix](plots/confusion_matrix.png)
 ![Model Score](plots/model_score.png)
+
+---
+
+## 🎯 Example Predictions
+| Comment                             | Predicted Sentiment |
+|-------------------------------------|---------------------|
+| "The ride was so awesome!"          | Positive            |
+| "this product is bad"               | Negative            |
+| "I don't know what it eat toninght" | Neutral             |
 
 ---
 
